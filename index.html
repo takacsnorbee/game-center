@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game center project</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+		<meta lang="hu">
+		<meta	charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div id="welcome-wrapper">
+			<h1 id="welcome-h1">Welcome!</h1>
+			<img onclick="clickEnter()" src="Dpse.png" alt="logo">
+		</div>
+		<script>
+			
+			function clickEnter() {
+				var age = prompt("Please enter your age:");
+				if (age >= 18 && age < 120) {
+					alert("Welcome!");
+					window.open("/news.html","_self")
+				} else if (age < 18 && age > 0) {
+					alert("Sorry! You are too young!");
+				} else {
+					alert("Wrong input!");
+				}
+			}
+			
+		</script>
+	</body>
+</html>

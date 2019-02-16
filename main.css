@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(stadium.jpg);
+	background-size: cover;
+	background-position: 30%;
+	height: 100vh;
+	width: 100vw;
+}
+
+#welcome-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+#welcome-h1 {
+	font-size: 2.3rem;
+	margin-bottom: 35px;
+	text-shadow: 5px 5px 10px;
+	color: aquamarine;
+}
+
+img {
+	border: 2px solid gray;
+	border-radius: 60px 60px 200px 200px;
+	outline: none;
+	width: 40%;
+	height: auto;
+	animation: wiggle 1000ms 0s 2 ease-out none;
+}
+
+img:hover {
+	transform: scale(1.2, 1.2);	
+}
+
+/*ANIMATION*/
+
+@keyframes wiggle {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	30% {
+		transform: rotateZ(-10deg);
+	}
+	80% {
+		transform: rotateZ(10deg);
+	}
+}
+
+/*MEDIA QUERY*/
+
+@media (min-width : 520px) {
+	img {
+		width: 30%;
+	}
+	#welcome-h1 {
+		font-size: 2.5rem;
+  }
+}
+
+@media (min-width : 720px) {
+	img {
+		width: 25%;
+	}
+	#welcome-h1 {
+		font-size: 2.7rem;
+	}
+}
+
+@media (min-width : 920px) {
+	img {
+		width: 20%;
+	}
+	#welcome-h1 {
+		font-size: 3rem;
+	}	
+}
+
+@media (min-width : 1120px) {
+	img {
+		width: 15%;
+	}
+	#welcome-h1 {
+		font-size: 3.5rem;
+	}
+}
+
+@media (min-width : 1620px) {
+	img {
+		width: 13%;
+	}
+	#welcome-h1 {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width : 2200px) {
+	img:hover {
+		transform: scale(1.1, 1.1);	
+	}
+}
+
+
+
+
+
