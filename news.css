@@ -1,3 +1,14 @@
+html {
+	height: 100vh;
+}
+
+#newsWrapper {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	width: 100vw;
+}
+
 /*ACCORDION*/
 
 #accordion {
@@ -15,7 +26,8 @@
 	color: aliceblue;
 	font-size: 1rem;
 	padding-left: 1.4rem;
-	background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50%;
+	margin-top: 1rem;
+	background: #e6e6e6 url("#") 50% 50%; /*images/ui-bg_glass_75_e6e6e6_1x400.png*/
 	background-color: rgba(67, 37, 37, .7);
 }
 
@@ -24,23 +36,40 @@
 }
 
 #accordion a {
-	color: blue;
-}
-
-#accordion div {
-	color: lawngreen;
-	background-color: gray;
-}
-
-/*NAV*/
-
-#navButton {
 	color: aquamarine;
 }
 
-#card {
-	background-color: gray;
-	color: black;
+#accordion div {
+	color: white;
+	background-color: rgba(67, 37, 37);
+}
+
+
+/*CAROUSEL*/
+
+content {
+	width: auto;
+	margin: 70px 0;
+}
+
+.d-block {
+	height: auto;
+	border-radius: 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	filter: grayscale(100%);
+}
+
+.d-block:hover {
+	filter:grayscale(20%);
+}
+
+.grayScaler {
+	filter:grayscale(20%);
+}
+
+.carousel-caption {
+	text-shadow: 2px 2px 2px black;
 }
 
 

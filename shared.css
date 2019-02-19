@@ -12,19 +12,12 @@ background-image: url(stadium.jpg);
 
 /*HEADER*/
 
-#newsWrapper {
-	display: flex;
-	flex-direction: column;
-	height: calc(100vh - 70px);
-	width: 100vw;
-	
-}
-
-#newsWrapper > header {
+#header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	border-bottom: 1px solid black;
 }
 
 img {
@@ -34,7 +27,7 @@ img {
 	outline: none;
 }
 
-header, footer {
+#header, #footer {
 	background-color: rgba(67, 37, 37, .7);
 	height: 70px;
 	width: 100%;
@@ -53,6 +46,32 @@ header, footer {
 	text-shadow: 2px 2px 2px black;
 }
 
+/*NAV*/
+
+#navButton {
+	color: aquamarine;
+}
+
+#card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: rgba(26, 27, 28, .8);
+	border-radius: 0;
+	color: white;
+}
+
+.card>a {
+	color: white;
+}
+
+#card>a:hover {
+	text-shadow: 2px 2px 5px white;
+	color: white;
+	text-decoration: none;
+}
+
+
 /*FOOTER*/
 
 #footer {
@@ -62,6 +81,8 @@ header, footer {
 	align-items: center;
 	font-size: .8rem;
 	letter-spacing: .1rem;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 #footer p {
