@@ -31,7 +31,7 @@ img {
 	background-color: rgba(67, 37, 37, .7);
 	height: 70px;
 	width: 100%;
-	color: aquamarine;
+	color: #daf6ff;
 }
 
 #loginH3, #headerH3{
@@ -65,12 +65,12 @@ img {
 	color: white;
 }
 
-#card>a:hover {
+#card>a:hover, #prev:hover, #next:hover, #page1:hover, #page2:hover, #page3:hover {
 	text-shadow: 2px 2px 5px white;
 	color: white;
 	text-decoration: none;
+	border-bottom-color: white;
 }
-
 
 /*FOOTER*/
 
@@ -87,4 +87,95 @@ img {
 
 #footer p {
 	margin-bottom: 2px;
+}
+
+/*PAGINATION*/
+
+#prev, #next, #page1, #page2, #page3 {
+	background-color: rgba(26, 27, 28, .8);
+	border: none;
+	color: white;
+	border: 1px solid black;
+	margin: 20px 0;
+}
+
+/*TABLE*/
+
+.statH1 {
+	font-size: 2rem;
+	max-width: 80%;
+	color: lightgray;
+	text-shadow: 2px 3px 1px black;
+	margin: 20px auto;
+	text-decoration: underline;
+}
+
+.table {
+	background-color: rgba(67, 37, 37);
+}
+
+#statTable, #tableTable, #topTable {
+	color: white;
+	text-align: center;
+	width: 80%;
+	margin: 20px auto;
+}
+
+/*Media query*/
+
+@media(max-width : 320px) {
+	#header, #loginH3, #headerH3 {
+		font-size: .9rem;
+	}
+}
+
+@media(max-width : 400px) {
+	#tableTable {
+		font-size: .7rem;
+	}
+}
+
+@media(min-width : 600px) {
+	#statTable, #tableTable, #topTable {
+		font-size: 1.2rem;
+	}
+	.statH1 {
+		font-size: 2.2rem;
+	}
+}
+
+@media(min-width : 1000px) {
+	#header, #loginH3, #headerH3 {
+		font-size: 1.5rem;
+	}
+	.card {
+		font-size: 1.2rem;
+	}
+	#statTable, #tableTable, #topTable {
+		font-size: 1.3rem;
+	}
+	.statH1 {
+		font-size: 2.3rem;
+	}
+	#prev, #next, #page1, #page2, #page3 {
+		font-size: 1.2rem;
+	}
+}
+
+@media(min-width : 1200px) {
+	#header, #loginH3, #headerH3 {
+		font-size: 1.8rem;
+	}
+	.card {
+		font-size: 1.5rem;
+	}
+		#statTable, #tableTable, #topTable {
+		font-size: 1.5rem;
+	}
+	.statH1 {
+		font-size: 2.5rem;
+	}
+	#prev, #next, #page1, #page2, #page3 {
+		font-size: 1.4rem;
+	}
 }

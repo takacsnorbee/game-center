@@ -2,6 +2,30 @@ html {
 	height: 100vh;
 }
 
+#loading {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background: url(loading.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 65%;
+	visibility: hidden;
+}
+
+#loadingBtn {
+	margin-top: 40vh;
+	background-color: rgba(26, 27, 28, .8);
+	color: white;
+	border: 1px solid black;
+}
+
+#loadingBtn:hover {
+	text-shadow: 2px 2px 5px white;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
+	
 #newsWrapper {
 	display: flex;
 	flex-direction: column;
@@ -13,6 +37,7 @@ html {
 
 #accordion {
 	width: 70%;
+	text-align: center;
 	margin: 10px auto;
 }
 
@@ -27,7 +52,7 @@ html {
 	font-size: 1rem;
 	padding-left: 1.4rem;
 	margin-top: 1rem;
-	background: #e6e6e6 url("#") 50% 50%; /*images/ui-bg_glass_75_e6e6e6_1x400.png*/
+	background: #e6e6e6 url("#") 50% 50%; 
 	background-color: rgba(67, 37, 37, .7);
 }
 
@@ -44,8 +69,7 @@ html {
 	background-color: rgba(67, 37, 37);
 }
 
-
-/*CAROUSEL*/
+/*CAROUSEL*/  /*I should use images with same size!*/
 
 content {
 	width: auto;
@@ -72,4 +96,54 @@ content {
 	text-shadow: 2px 2px 2px black;
 }
 
+
+/*MEDIA QUERY*/
+
+@media(min-width : 1000px) {
+	
+	content {
+		width: 80%;
+		margin: 50px auto 100px;
+	}
+	
+	.d-block {
+		height: 500px;
+	}
+	
+	#accordion {
+		width: 50%;
+		margin: 50px auto;
+	}
+	
+	#accordion h3 {
+		font-size: 1.2rem;
+	}
+	
+	#accordion p {
+		max-height: 150px;
+		font-size: 1.1rem;
+	}
+	#loadingBtn {
+		font-size: 1.2rem;
+	}
+}
+
+@media(min-width : 1200px) {
+	
+	.d-block {
+		height: 600px;
+	}
+	
+	#accordion h3 {
+		font-size: 1.3rem;
+	}
+	
+	#accordion p {
+		max-height: 150px;
+		font-size: 1.2rem;
+	}
+	#loadingBtn {
+		font-size: 1.5rem;
+	}
+}
 

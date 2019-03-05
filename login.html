@@ -4,7 +4,7 @@
 		<title>Game center project statistics</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="stat.css">
+		<link rel="stylesheet" href="login.css">
 		<link rel="stylesheet" href="shared.css">
 		<meta charset="utf-8">
 		<meta lang="en">
@@ -26,32 +26,16 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	</head>
 	<body>
-		<header id="header">
-			<div id="login">
-				<h3 id="loginH3">Login</h3>
-			</div>
-			<h3 id="headerH3">DPSE Game Center</h3>
-			<img src="Dpse.png" alt="Dpse logo" >
-			<div><a id="navButton" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-bars"></i></a>
-			</div>	
-		</header>
-			
-			<!--Bootstrap nav-->
-			
-		<nav class="collapse" id="collapseExample">
-			<div id="card" class="card card-body">
-				<a href="news.html">News</a>
-				<a href="stat.html">Statistics</a>
-				<a href="lineup.html">Line Up</a>	
-			</div>
-		</nav>
-		<footer id="footer">
-			<p><span>DPSE Game Center Project &copy; 2019 </span></p>
-			<p><span>Made by: Norbert Takács</span></p>
-		</footer>
-		<script>
+		<div>
+			<h1 id="loginH1">Login:</h1>
+			<form id="loginForm">
+				<input id="usernameInput" class="inputField" type="text" value="" placeholder="Username:">
+				<input id="passwordInput" class="inputField" type="password" value="" placeholder="Password:">
+				<input id="inputButton"  class="inputField" onclick="closeLoginWindow()" type="submit" value="Press to login..." >
+			</form>
+		</div>
 		
+		<script src="sharedJS.js" type="text/javascript"></script>
 		
-		</script>
 	</body>
 </html>

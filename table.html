@@ -4,8 +4,8 @@
 		<title>Game center project statistics</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="stat.css">
-		<link rel="stylesheet" href="shared.css">
+		<link rel="stylesheet" href="table.css" type="text/css">
+		<link rel="stylesheet" href="shared.css" type="text/css">
 		<meta charset="utf-8">
 		<meta lang="en">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
 	</head>
 	<body>
 		<header id="header">
-			<div id="login">
+			<div id="login" onclick="openLoginWindow()">
 				<h3 id="loginH3">Login</h3>
 			</div>
 			<h3 id="headerH3">DPSE Game Center</h3>
@@ -45,13 +45,143 @@
 				<a href="lineup.html">Line Up</a>	
 			</div>
 		</nav>
+		
+		<h1 class="statH1">Magic Soccer Leage Table:</h1>
+		
+		<!--BOOTSTRAP TABLE-->
+		
+		<table id="tableTable" class="table table-sm">
+			<thead>
+				<tr>
+					<th scope="col">Position</th>
+					<th scope="col">Club</th>
+					<th scope="col">Played</th>
+					<th scope="col">Won</th>
+					<th scope="col">Drawn</th>
+					<th scope="col">Lost</th>
+					<th scope="col">Points</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>DPSE</td>
+					<td>1</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Team#2</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Team#3</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Team#4</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Team#5</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Team#6</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Team#7</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>Team#8</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Team#9</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>Team#10</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<!--BOOTSTRAP PAGINATION-->
+		
+		<nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				<li class="page-item">
+					<a id="prev" class="page-link" href="stat.html">Previous</a>
+				</li>
+				<li class="page-item ">
+					<a id="page1" class="page-link" href="stat.html">1</a>
+				</li>
+				<li class="page-item active">
+					<a id="page2" class="page-link" href="table.html">2<span class="sr-only"></span></a>
+				</li>
+				<li class="page-item">
+					<a id="page3" class="page-link" href="top.html">3</a>
+				</li>
+				<li class="page-item">
+					<a id="next" class="page-link" href="top.html">Next</a>
+				</li>
+			</ul>
+		</nav>
+		
 		<footer id="footer">
 			<p><span>DPSE Game Center Project &copy; 2019 </span></p>
 			<p><span>Made by: Norbert Takács</span></p>
 		</footer>
-		<script>
-		
-		
-		</script>
+		<script src="sharedJS.js" type="text/javascript"></script>
 	</body>
 </html>

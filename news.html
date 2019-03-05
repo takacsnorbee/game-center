@@ -4,8 +4,8 @@
 		<title>Game center project news</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="shared.css">
-		<link rel="stylesheet" href="news.css">
+		<link rel="stylesheet" href="shared.css" type="text/css">
+		<link rel="stylesheet" href="news.css" type="text/css">	
 		<meta lang="en">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,10 +25,22 @@
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	</head>
+	
 	<body>
+		
+		<!--Loading-->
+		 
+		<div id="loading" class="text-center">
+			<button id="loadingBtn" class="btn btn-primary" type="button" onclick="hideIt()" disabled>
+				<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...
+			</button>
+		</div>
+		
+		<!--Header-->
+		
 		<div id="newsWrapper">
 			<header id="header">
-				<div id="login">
+				<div id="login" onclick="openLoginWindow()">
 					<h3 id="loginH3">Login</h3>
 				</div>
 				<h3 id="headerH3">DPSE Game Center</h3>
@@ -109,11 +121,13 @@
 				</div>
 			</content>
 		</div>
+		
 		<footer id="footer">
 			<p><span>DPSE Game Center Project &copy; 2019 </span></p>
 			<p><span>Made by: Norbert Takács</span></p>
 		</footer>
 		
+		<script src="sharedJS.js" type="text/javascript"></script>
 		<script>
 			$(document).ready(function() {
 				
@@ -121,21 +135,24 @@
 					$( "#accordion" ).accordion({
 						collapsible: true,
 						heightStyle: "content"
-					});
-				});
+					})
+				})
 				
 				$(".carousel-control-prev, .carousel-control-next, .carousel-item").mouseenter(function(){
-					$(".d-block").addClass("grayScaler");
-				});
+					$(".d-block").addClass("grayScaler")
+				})
 				$(".carousel-control-prev, .carousel-control-next, .carousel-item").mouseleave(function(){
-					$(".d-block").removeClass("grayScaler");
-				});
+					$(".d-block").removeClass("grayScaler")
+				})
 				
 						
-			});
+			})
+		</script>
+		<script>
 			
 			
 			
+				
 		</script>
 		
 	</body>

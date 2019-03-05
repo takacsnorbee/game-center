@@ -4,8 +4,8 @@
 		<title>Game center project statistics</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="stat.css">
-		<link rel="stylesheet" href="shared.css">
+		<link rel="stylesheet" href="top.css" type="text/css">
+		<link rel="stylesheet" href="shared.css" type="text/css">
 		<meta charset="utf-8">
 		<meta lang="en">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
 	</head>
 	<body>
 		<header id="header">
-			<div id="login">
+			<div id="login" onclick="openLoginWindow()">
 				<h3 id="loginH3">Login</h3>
 			</div>
 			<h3 id="headerH3">DPSE Game Center</h3>
@@ -45,13 +45,65 @@
 				<a href="lineup.html">Line Up</a>	
 			</div>
 		</nav>
+		
+		<h1 class="statH1">Top goalscorers:</h1>
+		
+		<!--BOOTSTRAP TABLE-->
+		
+		<table id="topTable" class="table table-sm">
+			<thead>
+				<tr>
+					<th scope="col">Name</th>
+					<th scope="col">Team</th>
+					<th scope="col">Goals</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Anonymus 1</td>
+					<td>DPSE</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Anonymus 2</td>
+					<td>DPSE</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Anonymus 3</td>
+					<td>Team 10</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<!--BOOTSTRAP PAGINATION-->
+		
+		<nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				<li class="page-item">
+					<a id="prev" class="page-link" href="table.html">Previous</a>
+				</li>
+				<li class="page-item ">
+					<a id="page1" class="page-link" href="stat.html">1</a>
+				</li>
+				<li class="page-item">
+					<a id="page2" class="page-link" href="table.html">2</a>
+				</li>
+				<li class="page-item active">
+					<a id="page3" class="page-link" href="top.html">3<span class="sr-only"></span></a>
+				</li>
+				<li class="page-item disabled">
+					<a id="next" class="page-link" href="#" tabindex="-1">Next</a>
+				</li>
+			</ul>
+		</nav>
+		
 		<footer id="footer">
 			<p><span>DPSE Game Center Project &copy; 2019 </span></p>
 			<p><span>Made by: Norbert Takács</span></p>
 		</footer>
-		<script>
-		
-		
-		</script>
+		<script src="sharedJS.js" type="text/javascript"></script>
+
 	</body>
 </html>

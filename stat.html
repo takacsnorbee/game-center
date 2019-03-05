@@ -4,8 +4,8 @@
 		<title>Game center project statistics</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="stat.css">
-		<link rel="stylesheet" href="shared.css">
+		<link rel="stylesheet" href="stat.css" type="text/css">
+		<link rel="stylesheet" href="shared.css" type="text/css">
 		<meta charset="utf-8">
 		<meta lang="en">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
 	</head>
 	<body>
 		<header id="header">
-			<div id="login">
+			<div id="login" onclick="openLoginWindow()">
 				<h3 id="loginH3">Login</h3>
 			</div>
 			<h3 id="headerH3">DPSE Game Center</h3>
@@ -45,14 +45,107 @@
 				<a href="lineup.html">Line Up</a>	
 			</div>
 		</nav>
+		
+		<h1 class="statH1">Statistics:</h1>
+		
+		<!--BOOTSTRAP TABLE-->
+		
+		<table id="statTable" class="table table-sm">
+			<thead>
+				<tr>
+					<th scope="col">DPSE</th>
+					<th scope="col"></th>
+					<th scope="col">Away</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2</td>
+					<td>Goals</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>71%</td>
+					<td>Possession</td>
+					<td>29%</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Shot on target</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Shot off target</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Corners</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Offsides</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>Free kick</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Yellow cards</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>0</td>
+					<td>Red cards</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Saves</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>690</td>
+					<td>Passes</td>
+					<td>245</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<!--BOOTSTRAP PAGINATION-->
+		
+		<nav aria-label="...">
+			<ul class="pagination justify-content-center">
+				<li class="page-item disabled">
+					<a id="prev" class="page-link" href="#" tabindex="-1">Previous</a>
+				</li>
+				<li class="page-item active">
+					<a id="page1" class="page-link" href="stat.html">1<span class="sr-only"></span></a>
+				</li>
+				<li class="page-item">
+					<a id="page2" class="page-link" href="table.html">2</a>
+				</li>
+				<li class="page-item">
+					<a id="page3" class="page-link" href="top.html">3</a>
+				</li>
+				<li class="page-item">
+					<a id="next" class="page-link" href="table.html">Next</a>
+				</li>
+			</ul>
+		</nav>
+		
 		<footer id="footer">
 			<p><span>DPSE Game Center Project &copy; 2019 </span></p>
 			<p><span>Made by: Norbert Takács</span></p>
 		</footer>
-		<script>
+		<script src="sharedJS.js" type="text/javascript"></script>
 		
-		
-		</script>
+
 	</body>
 </html>
 	

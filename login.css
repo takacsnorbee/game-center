@@ -1,0 +1,33 @@
+#loginH1 {
+	font-size: 2rem;
+	max-width: 80%;
+	color: lightgray;
+	text-shadow: 2px 3px 1px black;
+	margin: 20px auto;
+	text-decoration: underline;
+	letter-spacing: .2rem;
+}
+
+#loginForm, #loginH1 {
+	width: 80%;
+	margin: 10vh auto;
+}
+
+.inputField {
+	display: block;
+	width: 100%;
+	margin: 20px auto;
+	border: 1.5px solid black;
+}
+
+#inputButton {
+	background-color: rgba(26, 27, 28, .8);
+	color: white;
+	margin-top: 40px;
+}
+
+#inputButton:hover {
+	text-shadow: 2px 2px 5px white;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
